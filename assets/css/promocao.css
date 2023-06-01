@@ -1,0 +1,64 @@
+/*PROMOCAO*/
+
+#promocao {
+  height: auto;
+  background-color: var(--cor-laranja);
+  padding: 3rem 2rem;
+  -webkit-box-shadow: 0px 2px 15px 5px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 0px 2px 15px 5px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 2px 15px 5px rgba(255, 255, 255, 0.3);
+}
+
+#promocao-titulo {
+  text-align: center;
+  font-size: 1em;
+  padding: 0 0 1rem;
+  color: var(--cor-marrom);
+}
+
+#promocao form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+#promocao form input {
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+#promocao form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#promocao form input:nth-child(4) {
+  background-color: var(--cor-marrom);
+  color: var(--cor-branco);
+  width: 100px;
+}
+@media screen and (min-width: 425px) {
+  #promocao form input {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #promocao form input {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #promocao form input {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #promocao form{
+    justify-content: center;
+    flex-direction: row;
+  }
+  #promocao form input {
+    width: 20%;
+  }
+}

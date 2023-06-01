@@ -1,0 +1,113 @@
+@import url(../header.css);
+@import url(../components/pizza-card.css);
+@import url(../components/bebida-card.css);
+@import url(../footer.css);
+
+:root {
+  --cor-laranja: #daa520;
+  --cor-marrom: #473001;
+  --cor-branco: #fff;
+  --cor-preto: #000;
+  --cor-fundo: #000;
+  --cor-letras: #fff;
+
+  --fonte: Arial, Helvetica, sans-serif;
+  --regular: 400;
+  --bold: 700;
+  --italic: italic;
+  --normal: normal;
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--fonte);
+  font-weight: var(--regular);
+  background-color: var(--cor-fundo);
+  color: var(--cor-letras);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+section{
+  width: 100vw;
+  padding: 0 2rem;
+}
+section h1{
+  color: var(--cor-laranja);
+}
+.section-titulo{
+  padding: 2rem 0;
+}
+.container-cardapio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.container-bebidas{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-left: 1rem;
+}
+
+@media screen and (min-width:375px) {
+  section{
+    padding: 0 3rem;
+  }
+}
+@media screen and (min-width:425px) {
+  section{
+    padding: 0 3rem;
+  }
+}
+@media screen and (min-width:768px) {
+  section{
+    padding: 0 5rem;
+  }
+  .container-cardapio{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: stretch;
+  }
+  #vinhos .container-bebidas{
+    flex-direction: row;
+  }
+}
+@media screen and (min-width:1024px) {
+  section{
+    padding: 0 5rem;
+  }
+  .container-cardapio{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: stretch;
+  }
+  #vinhos .container-bebidas{
+    flex-direction: row;
+  }
+}
+@media screen and (min-width:1440px) {
+  section{
+    padding: 0 5rem;
+  }
+  .section-titulo{
+    padding-left: 5rem;
+  }
+  .container-bebidas{
+    padding-left: 10rem;
+  }
+}

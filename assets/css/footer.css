@@ -1,6 +1,9 @@
-footer{
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* FOOTER */
+footer {
+    padding: 1rem;
+    background-color: var(--cor-laranja);
+    font-size: 0.7em;
+    color: var(--cor-preto);
+    text-align: center;
+  }
+  

@@ -1,0 +1,20 @@
+.contato-card{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+}
+.contato-card img{
+    width: 30px;
+    height: 30px;
+}
+.contato-card h2{
+    font-size: 1.2em;
+}
+.contato-card p{
+    font-size: 0.9em;
+    text-align: center;
+}

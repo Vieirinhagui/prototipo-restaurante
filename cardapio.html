@@ -5,49 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/styles-cardapio.css">
+    <link rel="stylesheet" href="assets\css\pages\styles-cardapio.css">
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
     <title>EPizza| Home</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="assets/img/logo-preta.svg" id="logo" alt="Logo">
-            <img src="assets/img/icones/icon-menu-preto.svg" id="menu-hamburguer" alt="Menu-Hamburguer">
+            <img src="assets/img/logo-branca.svg" class="logo" id="logo" alt="Logo">
+            <img src="assets/img/icones/icon-menu-branco.svg" class="menu-hamburguer" id="menu-hamburguer"
+                alt="Menu-Hamburguer">
             <div class="menu-desktop">
                 <ul class="menu-lista-desktop">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a href="index.html#quem-somos">Quem Somos</a></li>
-                    <li><a href="index.html#contato">Contato</a></li>
-                    <li><a href="index.html#localizacao">Localização</a></li>
-                    <li><a href="index.html#redes-sociais">Redes Sociais</a></li>
-                    <li><a href="avaliacao.html">Avaliação</a></li>
+                    <li><a href="index.html" class="click">Home</a></li>
+                    <li><a href="cardapio.html" class="click">Cardápio</a></li>
+                    <li><a href="#quem-somos" class="click">Quem Somos</a></li>
+                    <li><a href="#contato" class="click">Contato</a></li>
+                    <li><a href="avaliacao.html" class="click">Avaliação</a></li>
                 </ul>
             </div>
         </nav>
         <div class="background" id="background">
             <div class="menu-mobile">
-                <img src="assets/img/icones/icon-close.svg" class="icon" id="icon-fechar" alt="Fechar">
+                <img src="assets/img/icones/icon-close.svg" class="icon-fechar icon" id="icon-fechar" alt="Fechar">
                 <ul class="menu-lista-mobile">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a href="index.html#quem-somos">Quem Somos</a></li>
-                    <li><a href="index.html#contato">Contato</a></li>
-                    <li><a href="index.html#localizacao">Localização</a></li>
-                    <li><a href="index.html#redes-sociais">Redes Sociais</a></li>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                     <li><a href="avaliacao.html">Avaliação</a></li>
                 </ul>
             </div>
         </div>
-        
     </header>
     <main>
         <section id="salgadas">
-            <h1>Salgadas</h1>
-            <div class="conteiner-cardapio">
+            <h1 class="section-titulo">Salgadas</h1>
+            <div class="container-cardapio">
                 <div class="pizza-card">
                     <h1>Margherita</h1>
                     <img src="assets/img/pizzas/pizza-margherita.jpg" alt="pizza margherita">
@@ -82,8 +78,8 @@
             </div>
         </section>
         <section id="doces">
-            <h1>Doces</h1>
-            <div class="conteiner-cardapio">
+            <h1 class="section-titulo">Doces</h1>
+            <div class="container-cardapio">
                 <div class="pizza-card">
                     <h1>Chocolate Supreme</h1>
                     <img src="assets/img/pizzas/pizza-chocolate.jpg" alt="pizza chocolate">
@@ -112,14 +108,14 @@
                 <div class="pizza-card">
                     <h1>Maçã Caramelizada</h1>
                     <img src="assets/img/pizzas/pizza-maca-caramelizada.jpg" alt="pizza maçã caramelizada">
-                    <p></p>
+                    <p>Fatias de maçã, açúcar mascavo</p>
                     <h2>R$ 35,00</h2>
                 </div>
             </div>
         </section>
         <section id="especiais">
-            <h1>Especiais</h1>
-            <div class="conteiner-cardapio">
+            <h1 class="section-titulo">Especiais</h1>
+            <div class="container-cardapio">
                 <div class="pizza-card">
                     <h1>Mediterrânea</h1>
                     <img src="assets/img/pizzas/pizza-mediterranea.jpg" alt="pizza mediterranea">
@@ -155,10 +151,10 @@
             </div>
         </section>
         <section id="vinhos">
-            <h1>Vinhos</h1>
-            <div class="conteiner-cardapio">
-                <div class="tinto">
-                    <h2>Tintos- R$ 18,00 a Taça</h2>
+            <h1 class="section-titulo">Vinhos</h1>
+            <div class="container-bebidas">
+                <div class="bebida-card">
+                    <h1>Tintos</h1>
                     <ul>
                         <li>Merlot</li>
                         <li>Carbenet Sauvignon</li>
@@ -166,9 +162,11 @@
                         <li>Pinot Noir</li>
                         <li>Syrah/Shiraz</li>
                     </ul>
+                    
+                    <h2>R$ 18,00 a Taça</h2>
                 </div>
-                <div class="branco">
-                    <h2>Brancos- R$ 16,00 a Taça</h2>
+                <div class="bebida-card">
+                    <h1>Brancos</h1>
                     <ul>
                         <li>Chardonnay</li>
                         <li>Sauvignon Blanc</li>
@@ -176,9 +174,10 @@
                         <li>Riesling</li>
                         <li>Vinho Verde</li>
                     </ul>
+                    <h2>R$ 16,00 a Taça</h2>
                 </div>
-                <div class="rose">
-                    <h2>Rosés- R$ 17,00 a Taça</h2>
+                <div class="bebida-card">
+                    <h1>Rosés</h1>
                     <ul>
                         <li>Provence</li>
                         <li>Pinot Noir</li>
@@ -186,43 +185,40 @@
                         <li>Riesling</li>
                         <li>Syrah</li>
                     </ul>
+                    <h2>R$ 17,00 a Taça</h2>
                 </div>
             </div>
         </section>
         <section id="bebidas">
-            <h1>Bebidas não Alcoólicas</h1>
-            <ul class="lista-bebidas">
-                <li>Refrigerantes( Cola-Cola, Sprint, Fanta)</li>
-                <ul>
-                    <li>
-                        <h3>R$ 6,00</h3>
-                    </li>
-                </ul>
-                <li>Água com gás ou sem gás</li>
-                <ul>
-                    <li>
-                        <h3>R$ 6,00</h3>
-                    </li>
-                </ul>
-                <li>Sucos Naturais(Laranja, Limão, Abacaxi, morango)</li>
-                <ul>
-                    <li>
-                        <h3>R$ 6,00</h3>
-                    </li>
-                </ul>
-                <li>Limonada Fresca</li>
-                <ul>
-                    <li>
-                        <h3>R$ 6,00</h3>
-                    </li>
-                </ul>
-                <li>Chás Gelados(Pêssego, Limão, hortelã)</li>
-                <ul>
-                    <li>
-                        <h3>R$ 6,00</h3>
-                    </li>
-                </ul>
-            </ul>
+            <h1 class="section-titulo">Bebidas não Alcoólicas</h1>
+            <div class="container-bebidas">
+                <div class="bebida-card">
+                    <h1>Refrigerantes</h1>
+                    <p>Cola-Cola, Sprint, Fanta</p>
+                    <h2>R$ 6,00</h2>
+                </div>
+                <div class="bebida-card">
+                    <h1>Água</h1>
+                    <p>Com gás ou sem gás</p>
+                    <h2>R$ 6,00</h2>
+                </div>
+                <div class="bebida-card">
+                    <h1>Sucos Naturais</h1>
+                    <p>Laranja, Limão, Abacaxi, morango</p>
+                    <h2>R$ 6,00</h2>
+                </div>
+                <div class="bebida-card">
+                    <h1>Limonada</h1>
+                    <p>Fresca</p>
+                    <h2>R$ 6,00</h2>
+                </div>
+                <div class="bebida-card">
+                    <h1>Chás Gelados</h1>
+                    <p>Pêssego, Limão, hortelã</p>
+                    <h2>R$ 6,00</h2>
+                </div>
+            </div>
+
         </section>
     </main>
     <footer>

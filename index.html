@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -14,139 +15,109 @@
 <body>
     <header>
         <nav>
-            <img src="assets/img/logo-branca.svg" id="logo" alt="Logo">
-            <img src="assets/img/icones/icon-menu-branco.svg" id="menu-hamburguer" alt="Menu-Hamburguer">
+            <img src="assets/img/logo-branca.svg" class="logo" id="logo" alt="Logo">
+            <img src="assets/img/icones/icon-menu-branco.svg" class="menu-hamburguer" id="menu-hamburguer"
+                alt="Menu-Hamburguer">
             <div class="menu-desktop">
                 <ul class="menu-lista-desktop">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a href="#quem-somos">Quem Somos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li><a href="#localizacao">Localização</a></li>
-                    <li><a href="#redes-sociais">Redes Sociais</a></li>
-                    <li><a href="avaliacao.html">Avaliação</a></li>
+                    <li><a href="index.html" class="click">Home</a></li>
+                    <li><a href="cardapio.html" class="click">Cardápio</a></li>
+                    <li><a href="#quem-somos" class="click">Quem Somos</a></li>
+                    <li><a href="#contato" class="click">Contato</a></li>
+                    <li><a href="avaliacao.html" class="click">Avaliação</a></li>
                 </ul>
             </div>
         </nav>
         <div class="background" id="background">
             <div class="menu-mobile">
-                <img src="assets/img/icones/icon-close.svg" class="icon" id="icon-fechar" alt="Fechar">
+                <img src="assets/img/icones/icon-close.svg" class="icon-fechar icon" id="icon-fechar" alt="Fechar">
                 <ul class="menu-lista-mobile">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="cardapio.html">Cardápio</a></li>
                     <li><a href="#quem-somos">Quem Somos</a></li>
                     <li><a href="#contato">Contato</a></li>
-                    <li><a href="#localizacao">Localização</a></li>
-                    <li><a href="#redes-sociais">Redes Sociais</a></li>
                     <li><a href="avaliacao.html">Avaliação</a></li>
                 </ul>
             </div>
         </div>
-
     </header>
     <main>
         <section id="home">
             <div class="home-informacoes">
-                <h1>Conheça a pizza mais faamosa de brasília</h1>
-                <a href="#">Quem Somos</a>
+                <h1 id="home-texto">Bem-vindo(a) ao nosso universo gastronômico</h1>
+                <a href="#quem-somos" id="home-button">Quem Somos</a>
             </div>
-            <img src="assets/img/img-home.png" alt="imagem home">
-
+            <img src="assets/img/img-home.png" id="home-img" alt="imagem home">
         </section>
-        <section id="banners">
-            <img src="assets/img/banners/image 1.png" alt="banner aniversario">
+        <section id="banner">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/img/banners/image 1.png" alt="banner aniversario"></div>
+                    <div class="swiper-slide"><img src="assets/img/banners/image 1.png" alt="banner aniversario"></div>
+                    <div class="swiper-slide"><img src="assets/img/banners/image 1.png" alt="banner aniversario"></div>
+                </div>
+            </div>
         </section>
-        <section id="promocoes">
-            <h1>Preencha o cadastro abaixo para receber futuras promoções</h1>
+        <section id="promocao">
+            <h1 id="promocao-titulo">Preencha o cadastro abaixo para receber futuras promoções</h1>
             <form action="">
                 <input type="text" name="" placeholder="Insira seu nome" id="">
                 <input type="text" name="" placeholder="Insira seu email" id="">
-                <div>
-                    <input type="date" name="" placeholder="Insira seu telefone" id="">
-                    <input type="submit" name="" value="Enviar">
-                </div>
+
+                <input type="date" name="" placeholder="Insira seu telefone" id="">
+                <input type="submit" name="" value="Enviar">
+
             </form>
         </section>
         <section id="cardapio">
             <div class="cardapio-conteudo">
-                <h1>Cardápio</h1>
-                <p>
-                    Bem-vindo(a) ao nosso universo gastronômico de alta classe, onde a arte da pizza ganha vida.
-                    Delicie-se
-                    com a combinação perfeita de sabores requintados e ingredientes cuidadosamente selecionados. Navegue
-                    pelo nosso cardápio e permita-se ser seduzido(a) por uma variedade de pizzas sofisticadas, desde as
-                    clássicas até criações surpreendentes, acompanhadas por uma seleção de vinhos refinados. Desperte
-                    seus
-                    sentidos e entregue-se a uma experiência única e memorável, onde cada pedaço é uma celebração da
-                    culinária de alto padrão.
+                <h1 id="cardapio-titulo" class="titulo">Cardápio</h1>
+                <p id="cardapio-texto" class="paragrafo">Permita-nos levar você a uma
+                    viagem gastronômica inesquecível, onde a paixão pela pizza se transforma em arte.
                 </p>
-                <a href="#">Acessar</a>
+                <div class="cardapio-bnt"><a href="#" id="cardapio-botao">Acessar</a></div>
             </div>
-            <div class="cardapio-imagem">
-                <img src="assets/img/img-cardapio.png" alt="imagem cardapio">
+            <div class="cardapio-lista">
+                <table>
+                    <tr>
+                        <td>Pizzas Salgadas</td>
+                        <td>R$35,00</td>
+                    </tr>
+                    <tr>
+                        <td>Pizzas Doces</td>
+                        <td>R$32,00</td>
+                    </tr>
+                    <tr>
+                        <td>Pizzas Especiais</td>
+                        <td>R$43,00</td>
+                    </tr>
+                    <tr>
+                        <td>Vinhos</td>
+                        <td>R$16,00</td>
+                    </tr>
+                    <tr>
+                        <td>Bebidas</td>
+                        <td>R$6,00</td>
+                    </tr>
+                </table>
             </div>
         </section>
         <section id="quem-somos">
             <div class="quem-somos-conteudo">
-                <h1>Quem Somos</h1>
-                <p>
-                    Somos uma pizzaria de alto padrão dedicada a oferecer uma experiência gastronômica excepcional aos
-                    nossos clientes. Com um compromisso inabalável com a qualidade e a criatividade culinária, nossa
-                    equipe de chefs talentosos e apaixonados trabalha incansavelmente para criar pizzas únicas e
-                    saborosas, que despertam os sentidos e satisfazem os paladares mais exigentes. Buscamos
-                    constantemente ingredientes frescos e selecionados, combinando técnicas tradicionais com um toque de
-                    inovação, para entregar um cardápio que excede as expectativas. Além disso, nosso serviço impecável
-                    e nossa atmosfera elegante criam um ambiente acolhedor e sofisticado, onde cada cliente é tratado
-                    como um convidado especial. Estamos empenhados em superar as expectativas e proporcionar momentos
-                    memoráveis ​​a todos que nos visitam. Bem-vindo(a) ao nosso mundo de excelência gastronômica, onde a
-                    paixão pela pizza se transforma em arte.
+                <h1 id="quem-somos-titulo" class="titulo">Quem Somos</h1>
+                <p id="quem-somos-texto" class="paragrafo">
+                    Somos uma pizzaria de alto padrão com pizzas únicas preparadas por chefs talentosos. Buscamos
+                    ingredientes frescos e combinamos técnicas tradicionais com inovação para superar as expectativas
+                    dos clientes. Nosso serviço impecável e atmosfera acolhedora tornam a experiência memorável.
                 </p>
             </div>
             <div class="quem-somos-imagens">
-                <div class="nosso-espaco">
-                    <h1>Nosso Espaço</h1>
-                    <iframe src="https://www.youtube.com/embed/Xu3nwAWgCBc"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen id="video-nosso-espaco"></iframe>
-                </div>
-                <div class="nossa-casa">
-                    <h1>Nossa Casa</h1>
-                    <div class="nossa-casa-conteudo">
-                        <img src="assets/img/nossa_casa/img-nossa-casa1.png" alt="imagem nossa casa 1">
-                        <img src="assets/img/nossa_casa/img-nossa-casa2.png" alt="imagem nossa casa 2">
-                        <img src="assets/img/nossa_casa/img-nossa-casa3.png" alt="imagem nossa casa 3">
-                        <img src="assets/img/nossa_casa/img-nossa-casa4.png" alt="imagem nossa casa 4">
-                        <img src="assets/img/nossa_casa/img-nossa-casa5.png" alt="imagem nossa casa 5">
-                        <img src="assets/img/nossa_casa/img-nossa-casa6.png" alt="imagem nossa casa 6">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contato">
-            <h1>Contato</h1>
-            <p>
-                Estamos ansiosos para receber suas dúvidas, sugestões e reservas! Entre em contato conosco para
-                descobrir
-                como podemos tornar sua experiência conosco ainda mais especial. Nossa equipe dedicada está pronta para
-                atendê-lo(a) com atenção e cordialidade. Aguardamos sua visita ou sua mensagem!
-            </p>
-            <div class="contato-contatos">
-                <div class="endereco">
-                    <img src="assets/img/icones/icon-localization.svg" class="icon" alt="Icone de localizacao">
-                    <h2>Endereço</h2>
-                    <p class="paragrafo-end">QS 07, Lote 01, Taguatinga Sul - Taguatinga, Brasília - DF, 71966-700</p>
-                </div>
-                <div class="telefone">
-                    <img src="assets/img/icones/icon-phone.svg" class="icon" alt="Icone de telefone">
-                    <h2>Telefone</h2>
-                    <p class="paragrafo-end">(61) 3356-9000</p>
-                </div>
-                <div class="email">
-                    <img src="assets/img/icones/icon-mail.svg" class="icon" alt="Icone de email">
-                    <h2>Email</h2>
-                    <p class="paragrafo-end">info@epizza.com</p>
-                </div>
+                <img src="assets/img/nossa_casa/img-nossa-casa1.png" alt="imagem nossa casa 1">
+                <img src="assets/img/nossa_casa/img-nossa-casa2.png" alt="imagem nossa casa 2">
+                <img src="assets/img/nossa_casa/img-nossa-casa3.png" alt="imagem nossa casa 3">
+                <img src="assets/img/nossa_casa/img-nossa-casa4.png" alt="imagem nossa casa 4">
+                <img src="assets/img/nossa_casa/img-nossa-casa5.png" alt="imagem nossa casa 5">
+                <img src="assets/img/nossa_casa/img-nossa-casa6.png" alt="imagem nossa casa 6">
             </div>
         </section>
         <section id="localizacao">
@@ -155,28 +126,54 @@
                 width="1280" height="720" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <section id="redes-sociais">
-            <h1>Redes Sociais</h1>
-            <div class="container-redes">
-                <div class="instagram icon">
+
+
+        <section id="contato">
+            <h1 id="contato-titulo" class="titulo">Contato</h1>
+            <p id="contato-texto" class="paragrafo">
+                Entre em contato conosco para dúvidas, sugestões e reservas. Nossa equipe está pronta para tornar sua
+                experiência especial com atenção e cordialidade. Aguardamos sua visita ou mensagem!
+            </p>
+            <div class="contato-contatos">
+                <div class="contato-card">
+                    <img src="assets/img/icones/icon-localization.svg" class="icon" alt="Icone de localizacao">
+                    <h2>Endereço</h2>
+                    <p class="paragrafo-end">QS 07, Lote 01, Taguatinga Sul - Taguatinga, Brasília - DF, 71966-700</p>
+                </div>
+                <div class="contato-card">
+                    <img src="assets/img/icones/icon-phone.svg" class="icon" alt="Icone de telefone">
+                    <h2>Telefone</h2>
+                    <p class="paragrafo-end">(61) 3356-9000</p>
+                </div>
+                <div class="contato-card">
+                    <img src="assets/img/icones/icon-mail.svg" class="icon" alt="Icone de email">
+                    <h2>Email</h2>
+                    <p class="paragrafo-end">info@epizza.com</p>
+                </div>
+                <div class="contato-card">
                     <img src="assets/img/icones/icon-instagram.svg" class="icon" alt="Icone Instagram">
-                    <h3>@ePizzaofficial</h3>
+                    <h2>Instagram</h2>
+                    <p>@ePizzaofficial</p>
                 </div>
-                <div class="facebopk icon">
+                <div class="contato-card">
                     <img src="assets/img/icones/icon-facebook.svg" class="icon" alt="Icone Facebook">
-                    <h3>facebook.com/ePizzaofficial</h3>
+                    <h2>Facebook</h2>
+                    <p>facebook.com/ePizzaofficial</p>
                 </div>
-                <div class="twitter icon">
+                <div class="contato-card">
                     <img src="assets/img/icones/icon-twitter.svg" class="icon" alt="Icone Twitter">
-                    <h3>@ePizzaofficial</h3>
+                    <h2>Twitter</h2>
+                    <p>@ePizzaofficial</p>
                 </div>
             </div>
+
         </section>
     </main>
     <footer>
         <p>@2023. Todos os direitos reservados</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

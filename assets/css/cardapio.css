@@ -1,69 +1,54 @@
-@media(max-width: 767px) {
-  #cardapio {
-  padding: 2rem 0 0;
-  background-color: var(--cor-branco);
-  color: var(--cor-preto);
-  width: 100vw;
-  height: auto;
-  overflow: hidden;
-}
-#cardapio img{
-  width: 100vw;
-  height: 100%;
-}
-#cardapio .cardapio-conteudo {
-  padding: 0 2rem 2rem;
+/* CARDAPIO */
+#cardapio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 2px 15px 5px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 0px 2px 15px 5px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 2px 15px 5px rgba(255, 255, 255, 0.3);
 }
 
-#cardapio .cardapio-conteudo p {
-  padding: 0 0 2rem;
-}
-#cardapio .cardapio-conteudo a {
-  color: var(--cor-laranja);
-  font-weight: var(--bold);
-  font-size: var(--subtitulo);
-  padding: .5rem 1rem;
-  border: 1px solid var(--cor-laranja);
-  border-radius: 15px;
-}
-#cardapio .cardapio-conteudo a:hover{
-  color: white;
+#cardapio-botao {
   background-color: var(--cor-laranja);
+  padding: 10px;
+  color: var(--cor-fundo);
+  border-radius: 5px;
 }
+.cardapio-bnt {
+  padding: 10px 0;
+}
+.cardapio-lista {
+  width: 100%;
+}
+.cardapio-lista table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cardapio-lista table tr {
+  border-bottom: 1px solid var(--cor-branco);
+  display: flex;
+  justify-content: space-between;
+}
+.cardapio-lista table td {
+  padding: 1rem 0;
 }
 
-@media screen and (min-width: 768px) {
-  #cardapio {
-    background-color: var(--cor-branco);
-    color: var(--cor-preto);
-    width: 100vw;
-    height: auto;
-    overflow: hidden;
+@media screen and (min-width: 1024px) {
+  #cardapio{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5rem;
   }
-  #cardapio img{
-    margin-left: 8rem;
-    margin-bottom: 8rem;
-    height: auto;
-    width: 600px;
+  #cardapio-texto{
+    text-align: justify;
   }
-  #cardapio .cardapio-conteudo {
-    padding: 0 2rem 2rem;
-    margin: 6rem;
+  .cardapio-lista,.cardapio-conteudo{
+    width: 40%;
   }
-  #cardapio .cardapio-conteudo h1 {
-    padding: 0 0 2rem;
-    font-size: 35px;
+}
+@media screen and (min-width: 1440px) {
+  #cardapio{
+    padding: 4rem 10rem;
   }
-  #cardapio .cardapio-conteudo p {
-    padding: 0 0 2rem;
-    font-size: 20px;
-  }
-  #cardapio .cardapio-conteudo a {
-    color: var(--cor-laranja);
-    font-weight: var(--bold);
-    font-size: var(--subtitulo);
-    padding: .5rem 1rem;
-    border: 1px solid var(--cor-laranja);
-    border-radius: 15px;
-  }  
 }

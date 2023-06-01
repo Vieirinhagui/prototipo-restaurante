@@ -7,184 +7,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/styles-cardapio.css">
-    <link rel="stylesheet" href="assets/css/styles.avaliacao.css">
+    <link rel="stylesheet" href="assets/css/pages/styles-avaliacao.css">
     <title>EPizza| Home</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="assets/img/logo-preta.svg" id="logo" alt="Logo">
-            <img src="assets/img/icones/icon-menu-preto.svg" id="menu-hamburguer" alt="Menu-Hamburguer">
+            <img src="assets/img/logo-branca.svg" class="logo" id="logo" alt="Logo">
+            <img src="assets/img/icones/icon-menu-branco.svg" class="menu-hamburguer" id="menu-hamburguer"
+                alt="Menu-Hamburguer">
             <div class="menu-desktop">
                 <ul class="menu-lista-desktop">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a href="index.html#quem-somos">Quem Somos</a></li>
-                    <li><a href="index.html#contato">Contato</a></li>
-                    <li><a href="index.html#localizacao">Localização</a></li>
-                    <li><a href="index.html#redes-sociais">Redes Sociais</a></li>
-                    <li><a href="avaliacao.html">Avaliação</a></li>
+                    <li><a href="index.html" class="click">Home</a></li>
+                    <li><a href="cardapio.html" class="click">Cardápio</a></li>
+                    <li><a href="#quem-somos" class="click">Quem Somos</a></li>
+                    <li><a href="#contato" class="click">Contato</a></li>
+                    <li><a href="avaliacao.html" class="click">Avaliação</a></li>
                 </ul>
             </div>
         </nav>
         <div class="background" id="background">
             <div class="menu-mobile">
-                <img src="assets/img/icones/icon-close.svg" class="icon" id="icon-fechar" alt="Fechar">
+                <img src="assets/img/icones/icon-close.svg" class="icon-fechar icon" id="icon-fechar" alt="Fechar">
                 <ul class="menu-lista-mobile">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a href="index.html#quem-somos">Quem Somos</a></li>
-                    <li><a href="index.html#contato">Contato</a></li>
-                    <li><a href="index.html#localizacao">Localização</a></li>
-                    <li><a href="index.html#redes-sociais">Redes Sociais</a></li>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                     <li><a href="avaliacao.html">Avaliação</a></li>
                 </ul>
             </div>
         </div>
-
     </header>
     <main>
-        <section id="avaliacao">
-            <h1>Avaliação</h1>
-            <div class="avaliacao-form">
-                <form action="">
-                    <input type="text" placeholder="Insira seu nome" name="" id="">
-                    <input type="text" placeholder="Insira seu email" name="" id="">
-                    <input type="text" placeholder="Insira seu telefone" name="" id="">
+        <h1>Avaliação</h1>
+        <div class="avaliacao-form">
+            <form action="">
+                <input type="text" placeholder="Insira seu nome" name="" id="">
+                <input type="text" placeholder="Insira seu email" name="" id="">
+                <input type="text" placeholder="Insira seu telefone" name="" id="">
+                <fieldset>
+                    <label for="">
+                        <p>Como você avaliaria a qualidade geral da comida e do sabor das pizzas?</p>
+                    </label>
                     <div>
-                        <label for="">
-                            <h3>Como você avaliaria a qualidade geral da comida e do sabor das pizzas?</h3>
-                        </label>
-                        <div>
-                            <div>
-                                <label for="excelente">Excelente</label>
-                                <input type="radio" name="excelente" id="excelente">
-                            </div>
-                            <div>
-                                <label for="">Muito Bom</label>
-                                <input type="radio" name="excelente" id="">
-                            </div>
-                            <div>
-                                <label for="">Bom</label>
-                                <input type="radio" name="excelente" id="">
-                            </div>
-                            <div>
-                                <label for="">Regular</label>
-                                <input type="radio" name="excelente" id="">
-                            </div>
-                            <div>
-                                <label for="">Insatisfatório</label>
-                                <input type="radio" name="excelente" id="">
-                            </div>
-                        </div>
+                        <table>
+                            <tr>
+                                <td><label for="excelente">Excelente</label></td>
+                                <td><input type="radio" name="excelente" id="excelente"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Muito Bom</label></td>
+                                <td><input type="radio" name="excelente" id=""></td>
+                            </tr>
+                            <tr>
+                                <td><label for="excelente">Bom</label></td>
+                                <td><input type="radio" name="excelente" id="excelente"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Regular</label></td>
+                                <td><input type="radio" name="excelente" id=""></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Insatisfatório</label></td>
+                                <td><input type="radio" name="excelente" id=""></td>
+                            </tr>
+                        </table>
                     </div>
+                </fieldset>
+                <fieldset>
+                    <label for="">
+                        <p>Qual é a sua opinião sobre o atendimento da equipe durante sua visita?</p>
+                    </label>
                     <div>
-                        <label for="">
-                            <h3>Qual é a sua opinião sobre o atendimento da equipe durante sua visita?</h3>
-                        </label>
-                        <div>
-                            <div>
-                                <label for="">Excelente</label>
-                                <input type="radio" name="Muito" id="">
-                            </div>
-                            <div>
-                                <label for="">Muito Bom</label>
-                                <input type="radio" name="Muito" id="">
-                            </div>
-                            <div>
-                                <label for="">Bom</label>
-                                <input type="radio" name="Muito" id="">
-                            </div>
-                            <div>
-                                <label for="">Regular</label>
-                                <input type="radio" name="Muito" id="">
-                            </div>
-                            <div>
-                                <label for="">Insatisfatório</label>
-                                <input type="radio" name="Muito" id="">
-                            </div>
-                        </div>
+                        <table>
+                            <tr>
+                                <td><label for="excelente">Excelente</label></td>
+                                <td><input type="radio" name="excelente" id="excelente"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Muito Bom</label></td>
+                                <td><input type="radio" name="excelente" id=""></td>
+                            </tr>
+                            <tr>
+                                <td><label for="excelente">Bom</label></td>
+                                <td><input type="radio" name="excelente" id="excelente"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Regular</label></td>
+                                <td><input type="radio" name="excelente" id=""></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Insatisfatório</label></td>
+                                <td><input type="radio" name="excelente" id=""></td>
+                            </tr>
+                        </table>
                     </div>
+                </fieldset>
+                <fieldset>
+                    <label for="">
+                        <p>Como você classificaria a atmosfera e o ambiente da pizzaria?</p>
+                    </label>
                     <div>
-                        <label for="">
-                            <h3>Como você classificaria a atmosfera e o ambiente da pizzaria?</h3>
-                        </label>
-                        <div>
-                            <div>
-                                <label for="">Excelente</label>
-                                <input type="radio" name="Bom" id="">
-                            </div>
-                            <div>
-                                <label for="">Muito Bom</label>
-                                <input type="radio" name="Bom" id="">
-                            </div>
-                            <div>
-                                <label for="">Bom</label>
-                                <input type="radio" name="Bom" id="">
-                            </div>
-                            <div>
-                                <label for="">Regular</label>
-                                <input type="radio" name="Bom" id="">
-                            </div>
-                            <div>
-                                <label for="">Insatisfatório</label>
-                                <input type="radio" name="Bom" id="">
-                            </div>
-                        </div>
+                        <table>
+                            <tr>
+                                <td><label for="excelente">Excelente</label></td>
+                                <td><input type="radio" name="excelente" id="excelente"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Muito Bom</label></td>
+                                <td><input type="radio" name="excelente" id=""></td>
+                            </tr>
+                            <tr>
+                                <td><label for="excelente">Bom</label></td>
+                                <td><input type="radio" name="excelente" id="excelente"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Regular</label></td>
+                                <td><input type="radio" name="excelente" id=""></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Insatisfatório</label></td>
+                                <td><input type="radio" name="excelente" id=""></td>
+                            </tr>
+                        </table>
                     </div>
+                </fieldset>
+                <fieldset>
+                    <label for="">
+                        <p>O tempo de espera pelo serviço e pelas pizzas foi satisfatório para você?</p>
+                    </label>
                     <div>
-                        <label for="">
-                            <h3>O tempo de espera pelo serviço e pelas pizzas foi satisfatório para você?</h3>
-                        </label>
-                        <div>
-                            <div>
-                                <label for="">Sim, foi rápido</label>
-                                <input type="radio" name="Regular" id="">
-                            </div>
-                            <div>
-                                <label for="">Sim, foi razoável</label>
-                                <input type="radio" name="Regular" id="">
-                            </div>
-                            <div>
-                                <label for="">Não, foi um pouco demorado</label>
-                                <input type="radio" name="Regular" id="">
-                            </div>
-                            <div>
-                                <label for="">Não, foi muito demorado</label>
-                                <input type="radio" name="Regular" id="">
-                            </div>
-                        </div>
+                        <table>
+                            <tr>
+                                <td><label for="excelente">Sim, foi rápido</label></td>
+                                <td><input type="radio" name="excelente" id="excelente"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Sim, foi razoável</label></td>
+                                <td><input type="radio" name="excelente" id=""></td>
+                            </tr>
+                            <tr>
+                                <td><label for="excelente">Não, foi um pouco demorado</label></td>
+                                <td><input type="radio" name="excelente" id="excelente"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Não, foi muito demorado</label></td>
+                                <td><input type="radio" name="excelente" id=""></td>
+                            </tr>
+                        </table>
                     </div>
+                </fieldset>
+                <fieldset>
+                    <label for="">
+                        <p>Você recomendaria a nossa pizzaria a amigos e familiares?</p>
+                    </label>
                     <div>
-                        <label for="">
-                            <h3>Você recomendaria a nossa pizzaria a amigos e familiares?</h3>
-                        </label>
-                        <div>
-                            <div>
-                                <label for="">Sim</label>
-                                <input type="radio" name="Insatisfatório" id="">
-                            </div>
-                            <div>
-                                <label for="">Talvez</label>
-                                <input type="radio" name="Insatisfatório" id="">
-                            </div>
-                            <div>
-                                <label for="">Não</label>
-                                <input type="radio" name="Insatisfatório" id="">
-                            </div>
-                        </div>
+                        <table>
+                            <tr>
+                                <td><label for="excelente">Sim</label></td>
+                                <td><input type="radio" name="excelente" id="excelente"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Talvez</label></td>
+                                <td><input type="radio" name="excelente" id=""></td>
+                            </tr>
+                            <tr>
+                                <td><label for="excelente">Não</label></td>
+                                <td><input type="radio" name="excelente" id="excelente"></td>
+                            </tr>
+
+                        </table>
                     </div>
-                    <textarea name="" id="" placeholder="Observações" cols="30" rows="10"></textarea>
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-        </section>
+                </fieldset>
+                <textarea name="" id="" placeholder="Observações" cols="30" rows="10"></textarea>
+                <fieldset id="bnt-enviar"><input type="submit" value="Enviar"></fieldset>
+            </form>
+        </div>
     </main>
     <footer>
         <p>@2023. Todos os direitos reservados</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

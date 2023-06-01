@@ -1,56 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url(header.css);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat&display=swap');@import url(header.css);
 @import url(home.css);
-@import url(banners.css);
-@import url(promocoes.css);
+@import url(banner.css);
+@import url(promocao.css);
 @import url(cardapio.css);
 @import url(quem-somos.css);
-@import url(contato.css);
 @import url(localizacao.css);
-@import url(redes-sociais.css);
+@import url(contato.css);
 @import url(footer.css);
+:root {
+  --cor-laranja: #daa520;
+  --cor-marrom: #473001;
+  --cor-branco: #fff;
+  --cor-preto: #000;
+  --cor-fundo: #000;
+  --cor-letras: #fff;
 
-:root{
-    --cor-laranja:#FFB800;
-    --cor-marrom:#473001;
-    --cor-branco:#fff;
-    --cor-preto:#000;
-
-    --fonte:'Playfair Display', serif;
-    --regular:400;
-    --bold:700;
-    --italic: italic;
-    --normal: normal;
-    --titulo: 1.5rem;
-    --subtitulo: 1.2rem;
-    --paragrafo: 1rem;
+  --fonte: 'Libre Baskerville', serif;
+  --fonte-paragrafo: 'Montserrat', sans-serif;
+  --regular: 400;
+  --bold: 700;
+  --italic: italic;
+  --normal: normal;
+  font-size: 16px;
+}
+main {
+  overflow-x: hidden;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--fonte);
+  font-weight: var(--regular);
+  background-color: var(--cor-fundo);
+  color: var(--cor-letras);
+}
+section {
+  width: 100vw;
+  padding: 2rem;
+  overflow-x: hidden;
 }
 
-body{
-    background-color: var(--cor-preto);
-    overflow-x: hidden;
+.icon {
+  width: 40px;
+  height: 40px;
 }
-body,section{
-    color: var(--cor-branco);
-    font-family: var(--fonte);
-    font-weight: var(--regular);
-    width: 100vw;
+
+.titulo {
+  font-size: 2em;
+  padding: 0 0 1rem;
 }
-section{
-    padding: 2rem;
-    height: auto;
+.paragrafo {
+  font-family: var(--fonte-paragrafo);
+  padding: 0 0 1rem;
 }
-h1,h2{
-    font-style: var(--italic);
+
+@media screen and (min-width:1024px) {
+  section {
+    padding: 2rem 5rem;
+  }
 }
-h1{
-    font-size: var(--titulo);
-    padding-bottom: 1rem;
-}
-h2{
-    font-size: var(--subtitulo);
-}
-.icon{
-    width: 40px;
-    height: 40px;
+@media screen and (min-width:1440px) {
+  section {
+    padding: 2rem 10rem;
+  }
 }

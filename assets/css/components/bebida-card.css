@@ -1,0 +1,31 @@
+.bebida-card{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 1rem 0;
+}
+
+.bebida-card h1{
+    color: var(--cor-branco);
+    font-size: 1.3rem;
+    margin: 0;
+}
+.bebida-card ul{
+    font-size: 0.9rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 5px 1rem;
+}
+.bebida-card p{
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+.bebida-card h2{
+    font-size: 1.1rem;
+    margin: 0;
+}
+

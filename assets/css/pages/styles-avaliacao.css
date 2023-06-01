@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat&display=swap");
+@import url(../header.css);
+@import url(../footer.css);
+:root {
+  --cor-laranja: #daa520;
+  --cor-marrom: #473001;
+  --cor-branco: #fff;
+  --cor-preto: #000;
+  --cor-fundo: #000;
+  --cor-letras: #fff;
+
+  --fonte: "Libre Baskerville", serif;
+  --fonte-paragrafo: "Montserrat", sans-serif;
+  --regular: 400;
+  --bold: 700;
+  --italic: italic;
+  --normal: normal;
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--fonte);
+  font-weight: var(--regular);
+  background-color: var(--cor-fundo);
+  color: var(--cor-letras);
+  text-align: justify;
+}
+
+main {
+  padding: 2rem;
+}
+main h1 {
+  color: var(--cor-laranja);
+  text-align: center;
+  padding-bottom: 2rem;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main form input[type="text"] {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+main form input[type="text"]:focus {
+  border: 2px solid var(--cor-laranja);
+  background-color: #cacaca;
+  outline: none;
+}
+main form input[type="text"]:nth-child(3) {
+  margin-bottom: 2rem;
+}
+main form input[type="radio"] {
+  accent-color: var(--cor-laranja);
+}
+main form fieldset {
+  padding: 0 0 2rem;
+  border: none;
+}
+main form fieldset p {
+  font-weight: var(--bold);
+  margin-bottom: 0.5rem;
+  color: var(--cor-laranja);
+}
+main table {
+  width: 100%;
+  border-collapse: collapse;
+}
+main table tr {
+  border-bottom: 1px solid var(--cor-branco);
+  display: flex;
+  justify-content: space-between;
+}
+main table td {
+  padding: 0.5rem 0;
+}
+
+main form textarea {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+main form textarea:focus {
+  border: 2px solid var(--cor-laranja);
+  background-color: #cacaca;
+  outline: none;
+}
+
+main form input[type="submit"] {
+  background-color: var(--cor-laranja);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: var(--cor-fundo);
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  main form input[type="text"] {
+    width: 50%;
+  }
+  main form fieldset {
+    width: 50%;
+  }
+  main form textarea {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  main form input[type="text"] {
+    width: 30%;
+  }
+  main form input[type="text"]:nth-child(3) {
+    margin-bottom: 0.5rem;
+  }
+  main form fieldset {
+    width: 45%;
+  }
+  main form textarea {
+    width: 45%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main form input[type="text"] {
+    width: 26%;
+  }
+  main form fieldset {
+    width: 40%;
+  }
+  main form #bnt-enviar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main form textarea {
+    width: 40%;
+  }
+}
